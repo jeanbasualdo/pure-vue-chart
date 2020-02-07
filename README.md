@@ -72,9 +72,9 @@ trend-line-color="lightblue"
 #### X-axis labels:
 X-axis labels, by default will be from 1 - length-of-data.
 But you can automatically use Months by using the prop `:use-month-labels="true"`.
-Or you can provide the data as an array of objects, each with a `value` and `label` like so:
+Or you can provide the data as an array of objects, each with a `value`, `stringValue` and `label` like so:
 ```
-:points=[{label: 'N', value: 41.1}, {label: 'NW', value: 1}, {label: 'W', value: 15}]
+:points=[{label: 'N', value: 41.1, stringValue '41.10N'}, {label: 'NW', value: 1, stringValue '1.00NW'}, {label: 'W', value: 15, stringValue '15.00W'}]
 ```
 
 <h3>Contributing</h3>

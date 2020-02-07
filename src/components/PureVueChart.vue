@@ -208,7 +208,7 @@ export default {
     chartData() {
       var chartdata = this.dynamicPoints.map((dynamicValue, index) => ({
         staticValue: this.usingObjectsForDataPoints
-          ? dynamicValue.value
+          ? (dynamicValue.stringValue ? dynamicValue.stringValue : dynamicValue.value)
           : this.staticPoints[index],
         index,
         width: this.partitionWidth - 2,
